@@ -3,8 +3,8 @@ Created on Jul 23, 2017
 
 @author: Salim
 '''
-from me.salimm.jrns.common.JRNSObject import JRNSObject
-from me.salimm.jrns.common.types.StatusType import StatusType
+from org.mouji.common.py.JRNSObject import JRNSObject
+from org.mouji.common.py.types.StatusType import StatusType
 
 
 class ResponseInfo(JRNSObject):

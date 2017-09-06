@@ -3,7 +3,7 @@ Created on Jul 21, 2017
 
 @author: Salim
 '''
-from me.salimm.jrns.common.JRNSObject import JRNSObject
+from org.mouji.common.py.JRNSObject import JRNSObject
 
 
 class NameServerInfo(JRNSObject):

@@ -5,9 +5,9 @@ Created on Jul 23, 2017
 '''
 import json
 
-from me.salimm.jrns.common.JRNSObject import JRNSObject
-from me.salimm.jrns.common.info.ResponseInfo import ResponseInfo
-from me.salimm.jrns.common.types.StatusType import StatusType
+from org.mouji.common.py.JRNSObject import JRNSObject
+from org.mouji.common.py.info.ResponseInfo import ResponseInfo
+from org.mouji.common.py.types.StatusType import StatusType
 
 class ExecutionResponse(JRNSObject):
     

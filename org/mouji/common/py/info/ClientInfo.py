@@ -3,8 +3,8 @@ Created on Jul 21, 2017
 
 @author: Salim
 '''
-from me.salimm.jrns.common.JRNSObject import JRNSObject
-from me.salimm.jrns.common.types.StubEnvType import StubEnvType
+from org.mouji.common.py.JRNSObject import JRNSObject
+from org.mouji.common.py.types.StubEnvType import StubEnvType
 
 
 
