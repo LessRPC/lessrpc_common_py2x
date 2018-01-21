@@ -6,7 +6,7 @@ Created on Jul 21, 2017
 
 import json
 
-class JRNSObject(object):
+class LessObject(object):
         
         
     @classmethod
@@ -20,3 +20,6 @@ class JRNSObject(object):
     @classmethod
     def from_dict(cls, fieldsDict):    
         return cls(**fieldsDict) 
+    
+    def clsPath(self):
+        return self.__module__ + "." + self.__class__.__name__
