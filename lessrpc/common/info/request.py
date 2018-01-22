@@ -3,9 +3,9 @@ Created on Nov 6, 2017
 
 @author: Salim
 '''
-from org.lessrpc.common.py.LessObject import LessObject
+from lessrpc.common.LessObject import LessObject
 from pylods.decorators import order_attr, rename_attr, type_attr
-from org.lessrpc.common.py.info.basic import ServiceInfo, EnvironmentInfo
+from lessrpc.common.info.basic import ServiceInfo, EnvironmentInfo
 
 
 @rename_attr('requestid','rid')

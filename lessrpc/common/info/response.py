@@ -3,9 +3,9 @@ Created on Nov 7, 2017
 
 @author: Salim
 '''
-from org.lessrpc.common.py.LessObject import LessObject
+from lessrpc.common.LessObject import LessObject
 from __builtin__ import property
-from org.lessrpc.common.py.info.basic import  ServiceProviderInfo, \
+from lessrpc.common.info.basic import  ServiceProviderInfo, \
     ServiceSupportInfo, ServiceInfo, ServiceLocator
 from abc import abstractmethod, ABCMeta
 from pylods.decorators import type_attr, use_deserializer, rename_attr,\

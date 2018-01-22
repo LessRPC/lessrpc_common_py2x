@@ -3,14 +3,13 @@ Created on Jul 21, 2017
  
 @author: Salim
 '''
-from org.lessrpc.common.py.LessObject import LessObject
-from org.lessrpc.common.py import Utils as Utils
-from org.lessrpc.common.py.Constants import SERIALIZATION_FORMAT_HTTP_FORMAT_FIELD_NAME, \
+from lessrpc.common.LessObject import LessObject
+from lessrpc.common import Utils as Utils
+from lessrpc.common.Constants import SERIALIZATION_FORMAT_HTTP_FORMAT_FIELD_NAME, \
     SERIALIZATION_FORMAT_HTTP_FORMAT_FIELD_VERSION
 import platform;
-from org.lessrpc.common.py.errors.less import SerializationFormatHTTPNotParsable
+from lessrpc.common.errors.less import SerializationFormatHTTPNotParsable
 from pylods.decorators import type_attr
-from abc import abstractmethod
 
 
 class NameServerInfo(LessObject):
