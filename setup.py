@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
   name = 'lessrpc_common',
-  packages = ['lessrpc_common'], # this must be the same as the name above
+  packages = ['lessrpc_common','lessrpc_common.info','lessrpc_common.erros'], # this must be the same as the name above
   version = '1.0.6',
   description = 'Less RPC Common modules share between stubs, name server and extensions',
   author = 'Salim Malakouti',
