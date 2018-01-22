@@ -4,7 +4,7 @@ Created on Nov 6, 2017
 @author: Salim
 '''
 from pylods.decorators import order_attr, rename_attr, type_attr
-from lessrpc.common.info.basic import ServiceInfo, EnvironmentInfo
+from lessrpc_common.info.basic import ServiceInfo, EnvironmentInfo
 
 
 @rename_attr('requestid','rid')

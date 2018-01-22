@@ -4,7 +4,7 @@ Created on Nov 7, 2017
 @author: Salim
 '''
 from abc import abstractmethod, ABCMeta
-from lessrpc.common.info.basic import ServiceInfo, ServiceDescription, \
+from lessrpc_common.info.basic import ServiceInfo, ServiceDescription, \
     ServiceProviderInfo, ServiceSupportInfo
 
 

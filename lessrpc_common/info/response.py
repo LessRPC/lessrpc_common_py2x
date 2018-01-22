@@ -4,7 +4,7 @@ Created on Nov 7, 2017
 @author: Salim
 '''
 from __builtin__ import property
-from lessrpc.common.info.basic import  ServiceProviderInfo, \
+from lessrpc_common.info.basic import  ServiceProviderInfo, \
     ServiceSupportInfo, ServiceInfo, ServiceLocator
 from abc import abstractmethod, ABCMeta
 from pylods.decorators import type_attr, use_deserializer, rename_attr,\

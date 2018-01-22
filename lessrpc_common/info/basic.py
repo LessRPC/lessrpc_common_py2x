@@ -3,11 +3,11 @@ Created on Jul 21, 2017
  
 @author: Salim
 '''
-from lessrpc.common import Utils as Utils
-from lessrpc.common.Constants import SERIALIZATION_FORMAT_HTTP_FORMAT_FIELD_NAME, \
+from lessrpc_common import Utils as Utils
+from lessrpc_common.Constants import SERIALIZATION_FORMAT_HTTP_FORMAT_FIELD_NAME, \
     SERIALIZATION_FORMAT_HTTP_FORMAT_FIELD_VERSION
 import platform;
-from lessrpc.common.errors.less import SerializationFormatHTTPNotParsable
+from lessrpc_common.errors.less import SerializationFormatHTTPNotParsable
 from pylods.decorators import type_attr
 
 
