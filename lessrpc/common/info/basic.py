@@ -3,7 +3,6 @@ Created on Jul 21, 2017
  
 @author: Salim
 '''
-from lessrpc.common.LessObject import LessObject
 from lessrpc.common import Utils as Utils
 from lessrpc.common.Constants import SERIALIZATION_FORMAT_HTTP_FORMAT_FIELD_NAME, \
     SERIALIZATION_FORMAT_HTTP_FORMAT_FIELD_VERSION
@@ -12,7 +11,7 @@ from lessrpc.common.errors.less import SerializationFormatHTTPNotParsable
 from pylods.decorators import type_attr
 
 
-class NameServerInfo(LessObject):
+class NameServerInfo():
     '''
     This class contains minimal information regarding a name server
      
@@ -32,7 +31,7 @@ class NameServerInfo(LessObject):
         
         
        
-class ServiceInfo(LessObject):
+class ServiceInfo():
     """
         Service info class that contains minimal information regarding a defined service
         @author: Salim
@@ -57,7 +56,7 @@ class ServiceInfo(LessObject):
  
  
  
-class ServiceDescription(LessObject):
+class ServiceDescription():
     
     def __init__(self, info, argsclspaths, resultclspath):
         if not isinstance(argsclspaths, list):
@@ -89,7 +88,7 @@ class ServiceDescription(LessObject):
 
 
 
-class ServiceLocator(LessObject):
+class ServiceLocator():
     
     def __init__(self):
         self.__map = {}
@@ -112,7 +111,7 @@ class ServiceLocator(LessObject):
 
 
 
-class EnvironmentInfo(LessObject):
+class EnvironmentInfo():
     """
         Environment info contains information that allows to know requirements of a client/server stub
     """
@@ -176,7 +175,7 @@ class EnvironmentInfo(LessObject):
 
 
 @type_attr('env', EnvironmentInfo)
-class ServiceProviderInfo(LessObject):
+class ServiceProviderInfo():
     """
         Contains minimal information regarding a provider
     """
@@ -207,7 +206,7 @@ class ServiceProviderInfo(LessObject):
 
 
         
-class SerializationFormat(LessObject):
+class SerializationFormat():
     """
   
     SerializationFormat object contains the following fields:
@@ -282,7 +281,7 @@ class SerializationFormat(LessObject):
         
         
         
-class SerializedObject(LessObject):
+class SerializedObject():
     '''
         SerializedObject class that contains generic classes and includes classpath for serialization/deserialization
     '''
@@ -323,7 +322,7 @@ class SerializedObject(LessObject):
 @type_attr("service", ServiceInfo)
 @type_attr("provider", ServiceProviderInfo)
 @type_attr("serializers", SerializationFormat)
-class ServiceSupportInfo(LessObject):
+class ServiceSupportInfo():
     '''
         ServiceSupportInfo contains information for support of a provider for a specific service
     '''

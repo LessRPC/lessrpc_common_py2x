@@ -3,7 +3,6 @@ Created on Nov 7, 2017
 
 @author: Salim
 '''
-from lessrpc.common.LessObject import LessObject
 from __builtin__ import property
 from lessrpc.common.info.basic import  ServiceProviderInfo, \
     ServiceSupportInfo, ServiceInfo, ServiceLocator
@@ -22,7 +21,7 @@ from pylods.mapper import ObjectMapper
 @order_attr("service",1)
 @order_attr("requestid",2)
 @order_attr("content",3)
-class ServiceResponse(LessObject):
+class ServiceResponse():
     """
     <p>
       Every call to /execute method will result with a response from the
@@ -85,7 +84,7 @@ class ServiceResponse(LessObject):
         
         
 
-class RequestResponse(LessObject):
+class RequestResponse():
     __metaclass__ = ABCMeta
     
     def __init__(self, status=None , content=None):

@@ -3,7 +3,6 @@ Created on Nov 6, 2017
 
 @author: Salim
 '''
-from lessrpc.common.LessObject import LessObject
 from pylods.decorators import order_attr, rename_attr, type_attr
 from lessrpc.common.info.basic import ServiceInfo, EnvironmentInfo
 
@@ -12,7 +11,7 @@ from lessrpc.common.info.basic import ServiceInfo, EnvironmentInfo
 @order_attr('service',1)
 @type_attr('service',ServiceInfo)
 @type_attr('env',EnvironmentInfo)
-class ServiceRequest(LessObject):
+class ServiceRequest():
     
     def __init__(self, service=None, env=None, requestid=None, args=None):
         self.service = service
