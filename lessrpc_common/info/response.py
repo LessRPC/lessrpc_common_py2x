@@ -124,7 +124,7 @@ class ExecuteRequestResponseDeserializer(EventBasedDeserializer):
         fieldname = None
         eventitr = events
         
-        event = eventitr.next()
+        event = next(eventitr)
         try:
             while event:
                 if(pdict.is_obj_property_name(event)):
@@ -159,9 +159,9 @@ class ExecuteRequestResponseDeserializer(EventBasedDeserializer):
                                         
                                 
                                 
-                                event = eventitr.next()
+                                event = next(eventitr)
                     fieldname = None
-                event = eventitr.next()
+                event = next(eventitr)
                 
         except StopIteration:
             pass
