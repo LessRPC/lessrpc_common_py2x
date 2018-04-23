@@ -145,10 +145,10 @@ class ExecuteRequestResponseDeserializer(EventBasedDeserializer):
                                     if(fieldname2 == 'rid'):
                                         resp.requestId = pdict.read_value(event);
                                     elif(fieldname2 == 'service'):
-                                        mapper = ObjectMapper(pdict)
+                                        mapper = ObjectMapper(pdict.mapper_backend)
                                         resp.service = mapper.read_obj(events, ServiceInfo, state=POPState.EXPECTING_OBJ_PROPERTY_OR_END, ctxt=ctxt)
                                     elif(fieldname2 == 'content'):
-                                        mapper = ObjectMapper(pdict)
+                                        mapper = ObjectMapper(pdict.mapper_backend)
                                         locator = ctxt.get_attribute('CLSLOCATOR', ServiceLocator.create())
                                         if pdict.is_value(event):
                                             resp.content = pdict.read_value(event)
